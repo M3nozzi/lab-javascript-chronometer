@@ -19,18 +19,37 @@ class Chronometer {
   }
   getSeconds() {
     // ... your code goes here
-    
+
+    return this.currentTime % 60;
+
   }
-  twoDigitsNumber() {
+  twoDigitsNumber(num) {
     // ... your code goes here
+
+    // if (num < 10) {
+    //   return '0' + num.toString();
+    // } else {
+    //   return num.toString();
+    // }
+
+    return value < 10 ? "0" + value.toString() : value.toString();
+
   }
   stopClick() {
     // ... your code goes here
+
+    clearInterval(this.intervalId);
   }
   resetClick() {
     // ... your code goes here
+
+    this.currentTime = 0;
   }
   splitClick() {
     // ... your code goes here
+
+    
+
+
   }
 }
